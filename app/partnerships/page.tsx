@@ -136,8 +136,7 @@ export default function PartnershipsPage() {
             <span>Back to Home</span>
           </Link>
           <div className="flex items-center space-x-2">
-            <span className="text-white font-bold text-lg">GITEX</span>
-            <img src="/images/nigeria-logo.png" alt="Nigeria" className="h-6 w-auto" />
+            <img src="/images/nigeria-logo.png" alt="Nigeria" className="h-12 w-auto" />
           </div>
         </div>
       </header>
