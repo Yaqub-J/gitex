@@ -80,7 +80,7 @@ export default function GitexNigeriaLanding() {
         <div className="bg-black/80 backdrop-blur-md border border-green-500/30 rounded-full px-6 py-3 shadow-2xl">
           <div className="flex items-center space-x-8">
             <div className="flex items-center space-x-2">
-              <img src="/images/nigeria-logo.png" alt="Nigeria" className="h-8 w-auto" />
+              <img src="/images/nigeria-logo.png" alt="Nigeria" className="h-12 w-auto" />
             </div>
             <div className="hidden md:flex items-center space-x-6">
               <a href="#about" className="text-white hover:text-green-400 transition-colors text-sm font-medium">
@@ -113,7 +113,7 @@ export default function GitexNigeriaLanding() {
         />
         <div className="relative z-10 text-center px-4">
           <div className="mb-8">
-            <img src="/images/nigeria-logo.png" alt="Nigeria" className="h-20 md:h-24 w-auto mx-auto" />
+            <img src="/images/nigeria-logo.png" alt="Nigeria" className="h-20 md:h-48 w-auto mx-auto" />
           </div>
 
           <div className="border-t-2 border-white w-24 mx-auto mb-8"></div>
