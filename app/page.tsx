@@ -89,11 +89,10 @@ export default function GitexNigeriaLanding() {
     <div className="min-h-screen bg-black text-white">
       {/* Floating Navbar */}
       <nav
-        className={`fixed top-2 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 w-[100%] sm:w-[95%] md:w-auto ${
-          showNavbar ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
-        }`}
+        className={`fixed top-2 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 w-screen max-w-full sm:w-[95%] md:w-auto px-0 sm:px-4 md:px-0`
+          + (showNavbar ? " opacity-100 translate-y-0" : " opacity-0 -translate-y-4 pointer-events-none")}
       >
-        <div className="bg-black/80 backdrop-blur-md border border-green-500/30 rounded-full px-2 py-1 shadow-2xl flex items-center justify-between sm:px-4 sm:py-2 md:px-6 md:py-3">
+        <div className="bg-black/80 backdrop-blur-md border border-green-500/30 rounded-full px-2 py-1 shadow-2xl flex items-center justify-between sm:px-4 sm:py-2 md:px-6 md:py-3 overflow-x-auto">
           <div className="flex items-center space-x-2 sm:space-x-4 md:space-x-8">
             <div className="flex items-center space-x-2">
               <img src="/images/nigeria-logo.png" alt="Nigeria" className="h-10 w-auto sm:h-12" />
