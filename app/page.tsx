@@ -177,83 +177,46 @@ export default function GitexNigeriaLanding() {
       {/* About The Roadshows Section */}
       <section id="about" className="py-10 sm:py-20 px-2 sm:px-4 md:px-8">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-8">About The Roadshows</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-8">About the GITEX Nigeria 2025 North-West Roadshow</h2>
           <div className="border-t-2 border-green-500 w-16 sm:w-24 mx-auto mb-6 sm:mb-12"></div>
 
           <div className="text-base sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8 space-y-2 sm:space-y-4">
             <p>
-              The <span className="font-bold">GITEX Nigeria 2025 Regional Roadshows</span> are a nationwide startup
-              discovery tour led by <span className="font-bold">NITDA</span> through the{" "}
-              <span className="font-bold">Office for Nigerian Digital Innovation (ONDI)</span>.
+              <span className="font-bold">GITEX Nigeria 2025 Regional Roadshow – North West Edition</span> is a high-impact innovation engagement program hosted by the National Information Technology Development Agency (NITDA), in collaboration with BigTech Agency Ltd as the official implementation partner for the North West. Scheduled for <span className="font-bold">Tuesday, July 29, 2025</span> at Coronation Hall, Kano Government House, this event is a strategic build-up to the national GITEX Nigeria 2025 event in Abuja.
             </p>
             <p>
-              From June to August 2025, we'll travel across Nigeria's{" "}
-              <span className="font-bold">six geopolitical zones</span> to uncover, engage, and spotlight the most{" "}
-              <span className="font-bold">promising startups</span> from every corner of the country.
+              <span className="font-bold">Theme:</span> Bridging Nigeria’s Innovation with Global Opportunities
             </p>
             <p>
-              This is your chance to <span className="font-bold">nominate your startup</span>,{" "}
-              <span className="font-bold">pitch your solution</span>, and earn a spot at{" "}
-              <span className="font-bold">GITEX Nigeria 2025</span> in Abuja—Nigeria's largest innovation showcase
-              happening from <span className="font-bold">September 1–4, 2025</span>.
+              The Kano roadshow is designed to identify and showcase high-potential tech startups, amplify the visibility of the North West innovation ecosystem, and foster regional collaboration with national and global stakeholders. It is a gateway to global opportunity for the North West innovation ecosystem.
+            </p>
+            <p>
+              <span className="font-bold">Key Objectives:</span>
+              <ul className="list-disc text-left ml-8 mt-2">
+                <li>Identify and spotlight high-potential startups in the North West</li>
+                <li>Strengthen federal-state collaboration in innovation</li>
+                <li>Showcase the North West ecosystem to a national audience</li>
+                <li>Foster regional unity through tech and youth mobilisation</li>
+                <li>Inspire participation in the national digital economy</li>
+                <li>Official launch of the SAAS Suite by BigTech Agency</li>
+              </ul>
+            </p>
+            <p>
+              <span className="font-bold">Organised by:</span> KAOUN International (GITEX Global, GITEX Africa), NITDA, ONDI, and BigTech Agency Ltd (North West Implementation Partner). Supported by the Federal Ministry of Communications, Innovation and Digital Economy.
+            </p>
+            <p>
+              <span className="font-bold">Venue:</span> Coronation Hall, Kano Government House, Kano State<br/>
+              <span className="font-bold">Date:</span> Tuesday, July 29, 2025<br/>
+              <span className="font-bold">Time:</span> 8:00AM - 4:00PM (WAT)
+            </p>
+            <p>
+              <span className="font-bold">Expected Audience:</span> Startup founders, tech entrepreneurs, innovation hubs, government officials, academia, investors, media, and more.
             </p>
           </div>
 
           <Button className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg font-semibold mb-8 sm:mb-16">
             NOMINATE YOUR STARTUP
           </Button>
-
-          {/* Where We're Going */}
-          <div className="grid gap-4 sm:gap-8 items-start grid-cols-1 md:grid-cols-2">
-            <div>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-8">
-                Where We're
-                <br />
-                Going
-              </h3>
-              <div className="border-t-2 border-green-500 w-16 sm:w-24 mb-4 sm:mb-8"></div>
-              <p className="text-base sm:text-lg">We'll be bringing the GITEX roadshow to all six geopolitical zones in Nigeria.</p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
-              <Card className="bg-gray-800 border-green-500 border-2">
-                <CardContent className="p-6 text-center">
-                  <h4 className="text-xl font-bold mb-2">South West</h4>
-                  <p className="text-gray-300">Lagos State</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-gray-800 border-green-500 border-2">
-                <CardContent className="p-6 text-center">
-                  <h4 className="text-xl font-bold mb-2">South South</h4>
-                  <p className="text-gray-300">Akwa Ibom State</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-gray-800 border-green-500 border-2">
-                <CardContent className="p-6 text-center">
-                  <h4 className="text-xl font-bold mb-2">North East</h4>
-                  <p className="text-gray-300">Gombe State</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-gray-800 border-green-500 border-2">
-                <CardContent className="p-6 text-center">
-                  <h4 className="text-xl font-bold mb-2">North Central</h4>
-                  <p className="text-gray-300">Abuja FCT</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-gray-800 border-green-500 border-2">
-                <CardContent className="p-6 text-center">
-                  <h4 className="text-xl font-bold mb-2">South East</h4>
-                  <p className="text-gray-300">Enugu State</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-gray-800 border-green-500 border-2">
-                <CardContent className="p-6 text-center">
-                  <h4 className="text-xl font-bold mb-2">North West</h4>
-                  <p className="text-gray-300">Kano State</p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -262,35 +225,41 @@ export default function GitexNigeriaLanding() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-8">Why You Should Apply</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8">Why You Should Join the Roadshow</h2>
               <div className="border-t-2 border-green-500 w-24 mb-8"></div>
               <p className="text-lg leading-relaxed">
-                We're looking for bold, local innovators who are solving real problems with scalable tech solutions.
-                This is your chance to:
+                The GITEX Nigeria 2025 North-West Roadshow is a launchpad for high-potential founders solving real problems with technology. Startups selected from the Kano regional showcase will be granted exclusive exhibition slots at GITEX Nigeria 2025 in Abuja.
               </p>
+              <ul className="list-disc ml-8 mt-4 text-lg text-left">
+                <li>Free exhibition booth at GITEX Nigeria 2025 Startup Pavilion</li>
+                <li>National & international visibility to 5,000+ participants, investors, and media</li>
+                <li>Direct engagement with potential funders, corporate partners, and accelerators</li>
+                <li>Featured media coverage across print, TV, and online channels</li>
+                <li>Mentorship and post-event opportunities for further support and funding</li>
+              </ul>
             </div>
 
             <div className="space-y-4 relative">
               <Card className="bg-gray-800 border-green-500 border-2 transform rotate-1 hover:rotate-0 transition-transform duration-300">
                 <CardContent className="p-6 text-center">
                   <p className="text-lg text-white">
-                    Pitch Your Startup Before A Jury Of Ecosystem Leaders, Investors, And Partners.
+                    Pitch your startup before a jury of ecosystem leaders, investors, and partners.
                   </p>
                 </CardContent>
               </Card>
               <Card className="bg-gray-800 border-green-500 border-2 transform -rotate-2 translate-x-4 hover:rotate-0 hover:translate-x-0 transition-transform duration-300">
                 <CardContent className="p-6 text-center">
-                  <p className="text-lg text-white">Gain National Visibility And Prepare For GITEX Global Dubai.</p>
+                  <p className="text-lg text-white">Gain national and international visibility at GITEX Nigeria 2025.</p>
                 </CardContent>
               </Card>
               <Card className="bg-gray-800 border-green-500 border-2 transform rotate-1 -translate-x-2 hover:rotate-0 hover:translate-x-0 transition-transform duration-300">
                 <CardContent className="p-6 text-center">
-                  <p className="text-lg text-white">Represent Your Zone At Nigeria's Biggest Tech Showcase.</p>
+                  <p className="text-lg text-white">Network with investors, policymakers, and tech leaders.</p>
                 </CardContent>
               </Card>
               <Card className="bg-gray-800 border-green-500 border-2 transform -rotate-1 translate-x-6 hover:rotate-0 hover:translate-x-0 transition-transform duration-300">
                 <CardContent className="p-6 text-center">
-                  <p className="text-lg text-white">Connect With Hubs, Media, Investors, And Policymakers.</p>
+                  <p className="text-lg text-white">Be part of Kano’s journey to become a leading digital hub in Northern Nigeria.</p>
                 </CardContent>
               </Card>
             </div>

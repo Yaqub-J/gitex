@@ -7,7 +7,8 @@ import { MapPin, Phone, Mail, Users, Megaphone, Building, Zap, Globe, Award, Arr
 import Link from "next/link"
 
 export default function PartnershipsPage() {
-  const [selectedTier, setSelectedTier] = useState("platinum")
+  type SponsorshipTierKey = keyof typeof sponsorshipTiers;
+  const [selectedTier, setSelectedTier] = useState<SponsorshipTierKey>("platinum")
 
   const partnershipTypes = [
     {
@@ -153,8 +154,10 @@ export default function PartnershipsPage() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Partner With Us</h1>
           <div className="border-t-2 border-green-500 w-24 mx-auto mb-8"></div>
           <p className="text-xl md:text-2xl mb-8 leading-relaxed">
-            Join Nigeria's largest innovation showcase and connect with the future of African technology. Partner with
-            GITEX Nigeria 2025 to showcase your brand, engage with startups, and drive meaningful impact.
+            Join the GITEX Nigeria 2025 North-West Roadshow in Kano—Nigeria's premier innovation engagement program for
+            the region. Collaborate with NITDA, ONDI, BigTech Agency, and KAOUN International to drive digital
+            transformation, empower startups, and connect with the future of African technology. Be part of the movement
+            to bridge Nigeria’s innovation with global opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg font-semibold">
@@ -164,7 +167,7 @@ export default function PartnershipsPage() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg font-semibold bg-transparent"
             >
-              DOWNLOAD PARTNERSHIP DECK
+              DOWNLOAD CONCEPT NOTE
             </Button>
           </div>
         </div>
@@ -242,7 +245,7 @@ export default function PartnershipsPage() {
                 <h3 className="text-3xl font-bold mb-4 text-white">{sponsorshipTiers[selectedTier].name}</h3>
                 <div className="text-4xl font-bold text-green-500 mb-8">{sponsorshipTiers[selectedTier].price}</div>
                 <ul className="space-y-3 mb-8">
-                  {sponsorshipTiers[selectedTier].benefits.map((benefit, idx) => (
+                  {sponsorshipTiers[selectedTier].benefits.map((benefit: string, idx: number) => (
                     <li key={idx} className="text-gray-300 flex items-center justify-center">
                       <span className="text-green-500 mr-3">✓</span>
                       {benefit}
@@ -330,7 +333,8 @@ export default function PartnershipsPage() {
           <h2 className="text-4xl md:text-5xl font-bold mb-8">Ready to Partner?</h2>
           <div className="border-t-2 border-green-500 w-24 mx-auto mb-8"></div>
           <p className="text-lg md:text-xl text-gray-300 mb-12">
-            Let's discuss how we can create a meaningful partnership that drives innovation and growth.
+            Let's discuss how we can create a meaningful partnership that drives innovation and growth in the North West
+            and beyond.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -339,21 +343,21 @@ export default function PartnershipsPage() {
                 <Mail className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">Email Us</h3>
-              <p className="text-gray-300">partnerships@startup.gov.ng</p>
+              <p className="text-gray-300">info@bigtechagency.com</p>
             </div>
             <div className="text-center">
               <div className="bg-green-600 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <Phone className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">Call Us</h3>
-              <p className="text-gray-300">+234 818 288 7766</p>
+              <p className="text-gray-300">+234 707 366 6668</p>
             </div>
             <div className="text-center">
               <div className="bg-green-600 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <MapPin className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">Visit Us</h3>
-              <p className="text-gray-300">790 Cadastral Zone, Wuye District, Abuja</p>
+              <p className="text-gray-300">Coronation Hall, Kano Government House, Kano State</p>
             </div>
           </div>
 
