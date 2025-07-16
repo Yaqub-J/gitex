@@ -70,10 +70,10 @@ export default function GitexNigeriaLanding() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const mobileMenuRef = useRef(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutside = (event: MouseEvent) => {
       if (mobileMenuRef.current && event.target instanceof Node && !mobileMenuRef.current.contains(event.target)) {
         setIsMobileMenuOpen(false);
       }
@@ -89,7 +89,7 @@ export default function GitexNigeriaLanding() {
     <div className="min-h-screen bg-black text-white">
       {/* Floating Navbar */}
       <nav
-        className={`fixed top-2 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 w-[98%] sm:w-[95%] md:w-auto ${
+        className={`fixed top-2 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 w-[100%] sm:w-[95%] md:w-auto ${
           showNavbar ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
         }`}
       >
