@@ -74,7 +74,7 @@ export default function GitexNigeriaLanding() {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+      if (mobileMenuRef.current && event.target instanceof Node && !mobileMenuRef.current.contains(event.target)) {
         setIsMobileMenuOpen(false);
       }
     };
@@ -89,22 +89,22 @@ export default function GitexNigeriaLanding() {
     <div className="min-h-screen bg-black text-white">
       {/* Floating Navbar */}
       <nav
-        className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 w-[90%] md:w-auto ${
+        className={`fixed top-2 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 w-[98%] sm:w-[95%] md:w-auto ${
           showNavbar ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
         }`}
       >
-        <div className="bg-black/80 backdrop-blur-md border border-green-500/30 rounded-full px-4 py-2 shadow-2xl flex items-center justify-between md:px-6 md:py-3">
-          <div className="flex items-center space-x-4 md:space-x-8">
+        <div className="bg-black/80 backdrop-blur-md border border-green-500/30 rounded-full px-2 py-1 shadow-2xl flex items-center justify-between sm:px-4 sm:py-2 md:px-6 md:py-3">
+          <div className="flex items-center space-x-2 sm:space-x-4 md:space-x-8">
             <div className="flex items-center space-x-2">
-              <img src="/images/nigeria-logo.png" alt="Nigeria" className="h-12 w-auto" />
+              <img src="/images/nigeria-logo.png" alt="Nigeria" className="h-10 w-auto sm:h-12" />
             </div>
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-6">
-              <a href="#about" className="text-white hover:text-green-400 transition-colors text-sm font-medium" onClick={() => setIsMobileMenuOpen(false)}>About</a>
-              <a href="#eligibility" className="text-white hover:text-green-400 transition-colors text-sm font-medium" onClick={() => setIsMobileMenuOpen(false)}>Eligibility</a>
-              <Link href="/partnerships" className="text-white hover:text-green-400 transition-colors text-sm font-medium" onClick={() => setIsMobileMenuOpen(false)}>Partnerships</Link>
-              <a href="#contact" className="text-white hover:text-green-400 transition-colors text-sm font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
-              <Button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm">NOMINATE</Button>
+            <div className="hidden md:flex items-center space-x-4 md:space-x-6">
+              <a href="#about" className="text-white hover:text-green-400 transition-colors text-xs sm:text-sm font-medium" onClick={() => setIsMobileMenuOpen(false)}>About</a>
+              <a href="#eligibility" className="text-white hover:text-green-400 transition-colors text-xs sm:text-sm font-medium" onClick={() => setIsMobileMenuOpen(false)}>Eligibility</a>
+              <Link href="/partnerships" className="text-white hover:text-green-400 transition-colors text-xs sm:text-sm font-medium" onClick={() => setIsMobileMenuOpen(false)}>Partnerships</Link>
+              <a href="#contact" className="text-white hover:text-green-400 transition-colors text-xs sm:text-sm font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
+              <Button className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm">NOMINATE</Button>
             </div>
           </div>
           {/* Mobile Menu Button */}
@@ -123,11 +123,11 @@ export default function GitexNigeriaLanding() {
         {/* Mobile Menu */}
         <div
           ref={mobileMenuRef}
-          className={`md:hidden bg-black/90 backdrop-blur-md border border-green-500/30 rounded-lg shadow-xl mt-2 p-4 transition-all duration-300 ease-in-out ${
+          className={`md:hidden bg-black/90 backdrop-blur-md border border-green-500/30 rounded-lg shadow-xl mt-2 p-2 sm:p-4 transition-all duration-300 ease-in-out ${
             isMobileMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
           }`}
         >
-          <div className="flex flex-col items-center space-y-4">
+          <div className="flex flex-col items-center space-y-2 sm:space-y-4">
             <a href="#about" className="text-white hover:text-green-400 transition-colors text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>About</a>
             <a href="#eligibility" className="text-white hover:text-green-400 transition-colors text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Eligibility</a>
             <Link href="/partnerships" className="text-white hover:text-green-400 transition-colors text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Partnerships</Link>
@@ -137,52 +137,52 @@ export default function GitexNigeriaLanding() {
         </div>
       </nav>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-black bg-opacity-70">
+      <section className="relative min-h-[70vh] sm:min-h-screen flex items-center justify-center bg-black bg-opacity-70">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 transition-all duration-1000"
           style={{
             backgroundImage: `url('${slideshowImages[currentSlide]}')`,
           }}
         />
-        <div className="relative z-10 text-center px-4">
-          <div className="mb-8">
-            <img src="/images/nigeria-logo.png" alt="Nigeria" className="h-20 md:h-48 w-auto mx-auto" />
+        <div className="relative z-10 text-center px-2 sm:px-4">
+          <div className="mb-4 sm:mb-8">
+            <img src="/images/nigeria-logo.png" alt="Nigeria" className="h-16 sm:h-20 md:h-48 w-auto mx-auto" />
           </div>
 
-          <div className="border-t-2 border-white w-24 mx-auto mb-8"></div>
+          <div className="border-t-2 border-white w-16 sm:w-24 mx-auto mb-4 sm:mb-8"></div>
 
-          <p className="text-xl md:text-2xl mb-4 italic">Unveiling Innovation. Connecting Ecosystems.</p>
-          <p className="text-xl md:text-2xl mb-12 italic">Showcasing Nigeria to the World.</p>
+          <p className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-4 italic">Unveiling Innovation. Connecting Ecosystems.</p>
+          <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-12 italic">Showcasing Nigeria to the World.</p>
 
           {/* Countdown Timer */}
-          <div className="flex justify-center space-x-8 md:space-x-16">
+          <div className="flex justify-center space-x-4 sm:space-x-8 md:space-x-16">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold">{timeLeft.days}</div>
-              <div className="text-sm md:text-base">Days</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold">{timeLeft.days}</div>
+              <div className="text-xs sm:text-sm md:text-base">Days</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold">{timeLeft.hours}</div>
-              <div className="text-sm md:text-base">Hours</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold">{timeLeft.hours}</div>
+              <div className="text-xs sm:text-sm md:text-base">Hours</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold">{timeLeft.minutes}</div>
-              <div className="text-sm md:text-base">Minutes</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold">{timeLeft.minutes}</div>
+              <div className="text-xs sm:text-sm md:text-base">Minutes</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold">{timeLeft.seconds}</div>
-              <div className="text-sm md:text-base">Seconds</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold">{timeLeft.seconds}</div>
+              <div className="text-xs sm:text-sm md:text-base">Seconds</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* About The Roadshows Section */}
-      <section id="about" className="py-20 px-4 md:px-8">
+      <section id="about" className="py-10 sm:py-20 px-2 sm:px-4 md:px-8">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">About The Roadshows</h2>
-          <div className="border-t-2 border-green-500 w-24 mx-auto mb-12"></div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-8">About The Roadshows</h2>
+          <div className="border-t-2 border-green-500 w-16 sm:w-24 mx-auto mb-6 sm:mb-12"></div>
 
-          <div className="text-lg md:text-xl leading-relaxed mb-8 space-y-4">
+          <div className="text-base sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8 space-y-2 sm:space-y-4">
             <p>
               The <span className="font-bold">GITEX Nigeria 2025 Regional Roadshows</span> are a nationwide startup
               discovery tour led by <span className="font-bold">NITDA</span> through the{" "}
@@ -201,23 +201,23 @@ export default function GitexNigeriaLanding() {
             </p>
           </div>
 
-          <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg font-semibold mb-16">
+          <Button className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg font-semibold mb-8 sm:mb-16">
             NOMINATE YOUR STARTUP
           </Button>
 
           {/* Where We're Going */}
-          <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div className="grid gap-4 sm:gap-8 items-start grid-cols-1 md:grid-cols-2">
             <div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-8">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-8">
                 Where We're
                 <br />
                 Going
               </h3>
-              <div className="border-t-2 border-green-500 w-24 mb-8"></div>
-              <p className="text-lg">We'll be bringing the GITEX roadshow to all six geopolitical zones in Nigeria.</p>
+              <div className="border-t-2 border-green-500 w-16 sm:w-24 mb-4 sm:mb-8"></div>
+              <p className="text-base sm:text-lg">We'll be bringing the GITEX roadshow to all six geopolitical zones in Nigeria.</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
               <Card className="bg-gray-800 border-green-500 border-2">
                 <CardContent className="p-6 text-center">
                   <h4 className="text-xl font-bold mb-2">South West</h4>
