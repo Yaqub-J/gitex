@@ -102,7 +102,9 @@ export default function GitexNigeriaLanding() {
               <a href="#eligibility" className="text-white hover:text-green-400 transition-colors text-xs sm:text-sm font-medium" onClick={() => setIsMobileMenuOpen(false)}>Eligibility</a>
               <Link href="/partnerships" className="text-white hover:text-green-400 transition-colors text-xs sm:text-sm font-medium" onClick={() => setIsMobileMenuOpen(false)}>Partnerships</Link>
               <a href="#contact" className="text-white hover:text-green-400 transition-colors text-xs sm:text-sm font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
+              <Link href="https://lu.ma/d7pfi88j?fbclid=PAZXh0bgNhZW0CMTEAAadsMqN3hYhdG_uKBcZDgMJpPGejncaVHISvFIWgSBhZA3qPMdY48p-KKfDmPQ_aem_oW4Tf9RJACtzVm5QD95xHA">
               <Button className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm">NOMINATE</Button>
+            </Link>
             </div>
           </div>
           {/* Mobile Menu Button */}
@@ -130,7 +132,9 @@ export default function GitexNigeriaLanding() {
             <a href="#eligibility" className="text-white hover:text-green-400 transition-colors text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Eligibility</a>
             <Link href="/partnerships" className="text-white hover:text-green-400 transition-colors text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Partnerships</Link>
             <a href="#contact" className="text-white hover:text-green-400 transition-colors text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
+            <Link href="https://lu.ma/d7pfi88j?fbclid=PAZXh0bgNhZW0CMTEAAadsMqN3hYhdG_uKBcZDgMJpPGejncaVHISvFIWgSBhZA3qPMdY48p-KKfDmPQ_aem_oW4Tf9RJACtzVm5QD95xHA">
             <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 text-base" onClick={() => setIsMobileMenuOpen(false)}>NOMINATE</Button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -214,9 +218,11 @@ export default function GitexNigeriaLanding() {
             </p>
           </div>
 
+          <Link href="https://lu.ma/d7pfi88j?fbclid=PAZXh0bgNhZW0CMTEAAadsMqN3hYhdG_uKBcZDgMJpPGejncaVHISvFIWgSBhZA3qPMdY48p-KKfDmPQ_aem_oW4Tf9RJACtzVm5QD95xHA">
           <Button className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg font-semibold mb-8 sm:mb-16">
             NOMINATE YOUR STARTUP
           </Button>
+          </Link>
         </div>
       </section>
 
@@ -275,9 +281,11 @@ export default function GitexNigeriaLanding() {
                   If you're a startup founder or part of a growing tech venture based in Nigeria, we want to hear from
                   you. Eligible applicants include:
                 </p>
+                <Link href="https://lu.ma/d7pfi88j?fbclid=PAZXh0bgNhZW0CMTEAAadsMqN3hYhdG_uKBcZDgMJpPGejncaVHISvFIWgSBhZA3qPMdY48p-KKfDmPQ_aem_oW4Tf9RJACtzVm5QD95xHA">
                 <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg font-semibold">
                   NOMINATE YOUR STARTUP
                 </Button>
+                </Link>
               </div>
 
               <div className="relative">
